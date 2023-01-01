@@ -23,5 +23,5 @@ switch(q.pathname){
             break;
 }
 });
-server.listen(3000);
+server.listen(4000);
 console.log("srver is running at port 3000");
