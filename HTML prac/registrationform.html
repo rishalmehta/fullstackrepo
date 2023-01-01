@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form method="get">
+           <tr>
+            <td>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nmid" placeholder="name">
+            </td>            
+           </tr>
+           <tr>
+            <td>
+                <label for="birth">birthdate</label>
+                <input type="date" name="birth" id="brthid">
+            </td>            
+           </tr>
+           <tr>
+            <td>
+                <label for="mob">Mobile</label>                
+ 
+                <select name="zonenum" id="znum">
+                    <option value="+91">+91</option>
+                    <option value="+63">+63</option>
+                    <option value="+10">+10</option>
+                    <option value="+28">+28</option>
+
+                </select>
+                   
+                <input type="number" name="mob" id="mob" min="8" max="8">
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <label for="addr">Address</label>
+                <textarea cols="40" rows="4" placeholder="---enter your address here---"></textarea>
+            </td>            
+           </tr>
+           <tr>
+            <td>
+                <label for="gender">Gender</label>
+            </td>
+            <td>    
+                <input type="radio" name="gender" id="fml">female<br>
+                <input type="radio" name="gender" id="ml" checked>male</input>
+            </td>            
+           </tr>
+           <tr>
+            <td>
+                <label for="hobby">Hobbies</label>
+                <input type="checkbox" name="hobby" id="rdng">reading
+                <input type="checkbox" name="hobby" id="playing">playing
+                <input type="checkbox" name="hobby" id="singing">singing
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <label for="">select city</label>
+                <select name="city" id="cty">
+                    <option value="null">---select one----</option>
+                    <option value="pune">Pune</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <button type="submit" name="submit" id="sbnt">submit</button>
+                <button type="reset" name="reset" id="rset">reset</button>
+            </td>
+           </tr>
+        </form>
+    </table>
+</body>
+</html>
