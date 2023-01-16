@@ -77,9 +77,10 @@ public class dataaccess{
 
         try{
             conn.Open();
-            string newquery=$"insert into users( username,course,purchasedate) values('{newusr.username}','{newusr.course}','{newusr.course}')";
+            string newquery=$"insert into users( username,course,purchasedate) values('{newusr.username}','{newusr.course}','{newusr.purchasedate}')";
             MySqlCommand cmd=new MySqlCommand(newquery,conn);
             cmd.ExecuteNonQuery();
+            conn.Close();
 
 
         }catch(Exception err){
@@ -94,9 +95,11 @@ public class dataaccess{
     public static void DeleteUser(int id){
         MySqlConnection conn=new MySqlConnection(constring);
         try{
+            conn.Open();
             string newquery="delete from users where userid ="+id;
             MySqlCommand cmd=new MySqlCommand(newquery,conn);
             cmd.ExecuteNonQuery();
+            conn.Close();
             
         }catch(Exception err){
             Console.WriteLine(err.Message);
