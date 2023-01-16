@@ -1,0 +1,17 @@
+//import logo from './logo.svg';
+import './App.css';
+import Displayuser from './components/Displayuser';
+// import Deleteuser from './components/Deleteuser';
+// import Insertuser from './components/Insertuser';
+
+function App() {
+  return (
+    <>
+    <Displayuser/>
+    {/* <Deleteuser/>
+    <Insertuser/> */}
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,19 @@
+{
+  "FilePath": "e:\\rishal\\.netpracendmod\\fullstackrepo\\react+webapi\\webapi1\\webapi1.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "6.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "webapi1",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
