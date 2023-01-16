@@ -5,13 +5,12 @@ using System.Data;
 using MySql.Data.MySqlClient;
 
 public class dataaccess{
-    
-    public static List<user> userlist=new List<user>();
 
     public static string constring = @"server=localhost; port=3306; user=root; password=root123; database=userinfo";
 
     //reading all data from database
     public static List<user> GetAllUser(){
+        List<user> userlist=new List<user>();
          MySqlConnection con = new MySqlConnection(constring);
          //List<user> userlist=new List<user>();
 
